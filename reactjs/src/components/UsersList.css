@@ -1,0 +1,84 @@
+.users-wrapper {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 80%;
+    padding: 8px 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card-index {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+.card.viewed {
+    background-color: #f0f0f0;
+    opacity: 0.85;
+}
+
+.card.viewed .card-link {
+    color: #666;
+}
+
+.viewed {
+    opacity: 0.6;
+    filter: grayscale(50%);
+    border: 2px solid #ccc;
+}
+
+a {
+    color: #333;
+}

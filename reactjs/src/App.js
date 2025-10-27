@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { UserList } from "./components/UserList";
-import { About } from "./components/About";
+import { UsersList } from "./components/UsersList.jsx";
+import { About } from "./components/About.jsx";
+import UserDetail from "./components/UserDetail.jsx";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         </nav>
 
         <Routes>
-          <Route path="/users" element={<UserList />} />
+          <Route path="/users" element={<UsersList />} />
+          <Route path="/users/:id" element={<UserDetail />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
