@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import { UserCard } from "./UserCard";
 
 export function UserDetail() {
     const { id } = useParams();
@@ -29,12 +30,10 @@ export function UserDetail() {
 
     return (
         <div>
-            <h3>Chi tiết người dùng</h3>
-            <p>Tên: {user.name}</p>
-            <p>Email: {user.email}</p>
-            <p>Số điện thoại: {user.phone}</p>
-            <p>Website: {user.website}</p>
-
+            {/* {user.map((u) => (
+                <UserCard key={u.id} user={u} />
+            ))} */}
+            <UserCard user={user}></UserCard>
             <Link to={`/users`}>Quay lại</Link>
         </div>
     )

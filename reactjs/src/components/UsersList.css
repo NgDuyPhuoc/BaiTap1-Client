@@ -82,3 +82,44 @@
 a {
     color: #333;
 }
+
+.load-more {
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+.load-more-btn {
+    display: flex;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.load-more-btn:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+.reload-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.reload-btn:hover {
+    background-color: #c82333;
+    cursor: pointer;
+}
